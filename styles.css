@@ -1,0 +1,65 @@
+/* Estilos básicos para el cuerpo */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+/* Estilos para el contenedor de la calculadora */
+.calculator {
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la pantalla */
+.display {
+  width: 100%;
+  height: 40px;
+  text-align: right;
+  font-size: 24px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilos para la disposición de los botones */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Estilos básicos para los botones */
+.buttons button {
+  font-size: 18px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos para los botones de operación */
+.buttons button.operation {
+  background-color: #ff9500;
+  color: #fff;
+}
+
+/* Estilos para los botones de número */
+.buttons button.number {
+  background-color: #e0e0e0;
+}
+
+/* Estilos para el botón de igual */
+.buttons button.equals {
+  background-color: #4caf50;
+  color: #fff;
+  grid-column: span 4; /* Ocupa todo el ancho de la fila */
+}
